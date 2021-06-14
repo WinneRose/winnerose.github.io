@@ -59,6 +59,32 @@ button {
   z-index: -1;
 }
 
+.div-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+}
+
+.div-container .centered {
+  text-align: center;
+}
+
+.div-container .centered h1 {
+  color: #6063ff;
+  font-size: 48px;
+  font-weight: 500;
+}
+
+.div-container .centered p {
+  color: #eee;
+  font-size: 24px;
+  font-weight: 400;
+}
+
 .listing {
   margin-top: 100px;
   text-align: center;
@@ -139,8 +165,8 @@ button {
 
 .listing .lists .project-card:hover {
   background-color: #282c3f;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .listing .lists .project-card h1 {

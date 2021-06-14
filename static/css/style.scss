@@ -63,6 +63,28 @@ button {
     z-index: -1;
 }
 
+.div-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+    .centered {
+        text-align: center;
+
+        h1 {
+            color: $best_color;
+            font-size: 48px;
+            font-weight: 500;
+        }
+
+        p {
+            color: #eee;
+            font-size: 24px;
+            font-weight: 400;
+        }
+    }
+}
+
 .listing {
     margin-top: 100px;
     text-align: center;
@@ -129,7 +151,7 @@ button {
 
             &:hover {
                 background-color: rgb(40, 44, 63);
-                transform: scale(1.1);
+                transform: scale(1.05);
             }
 
             h1 {
