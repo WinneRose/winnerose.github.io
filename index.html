@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5elenay - 127.0.0.1</title><!-- Meta Tags -->
+    <meta content="@5elenay" property="og:title">
+    <meta content="Welcome to my website, I'm 5elenay." property="og:description">
+    <meta content="5elenay" property="og:site_name">
+    <meta content='https://cdn.discordapp.com/attachments/853533451176902696/853654153226354698/avatars-83zDfixHzp0jAKrz-FuLieQ-t240x240.png' property='og:image'>
+    <!-- Load Style And Favicon -->
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="shortcut icon" type="image/png" href="./static/images/favicon.png"/>
+</head>
+<body>
+    <div class="color"></div>
+    <div class="navbar">
+        <h1>5elenay</h1>
+        <span class="button-list">
+            <a href="/">Home</a>
+            <a href="https://github.com/5elenay">GitHub</a>
+        </span>
+    </div>
+    <div class="container">
+        <div class="myself" id="description">
+            <h1 class="title">
+                Welcome to my website! I&#39;m <span>5elenay</span>,
+            </h1>
+            <p class="desc">
+                I&#39;m 15 years old self taught programmer from Turkey. 
+                I&#39;m mostly using <a href="https://www.python.org/">Python</a>. 
+                I&#39;m currently learning <a href="https://elixir-lang.org/">Elixir</a> and <a href="https://golang.org/">Go</a> programming languages.
+                <br>
+                Also using <a href="https://v3.vuejs.org/">VueJS (v3)</a> and <a href="https://www.javascript.com/">JavaScript</a> sometimes.
+            </p>
+            <span class="social">
+                <img src="./static/images/dev.svg" alt="dev" style="border-radius: 5px;" onclick="window.location.href = 'https\://dev.to/5elenay'">
+                <img src="./static/images/github.svg" alt="github" class="white" onclick="window.location.href = 'https\://github.com/5elenay'">
+                <img src="./static/images/discord.svg" alt="discord" onclick="window.location.href = 'https\://discord.com/users/793467584820281346'">
+            </span>
+        </div>
+        <span class="card" id="profile-card">
+            <img id="discord-avatar" class="avatar" alt="discord-avatar"></img>
+            <br>
+            <h1 id="discord-username"></h1>
+            <p class="discord-disc" id="discord-disc"></p>
+        </span>
+    </div>
+    <div class="wave"></div>
+    <div class="listing">
+        <h1>I Created:</h1>
+        <div class="lists" id="project-list">
+        </div>
+    </div>
+    <div class="listing">
+        <h1>I Use:</h1>
+        <div class="flex-list" id="using-list">
+        </div>
+    </div>
+    <footer class="alt-footer">
+        <a href="https://github.com/5elenay/5elenay.github.io">This website is open-source on Github.</a>
+    </footer>
+    <div class="color"></div>
+    <script src="./static/js/app.js"></script>
+</body>
+</html>
