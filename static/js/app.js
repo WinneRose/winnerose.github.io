@@ -21,14 +21,10 @@ const projects = [
         link: "https://github.com/5elenay/floppa-programming-language",
     },
     {
-        name: "Scupt",
-        description: "An uptime service for websites. (Dead Project.)",
-        link: "https://scupt.ga/",
-    },
-    {
-        name: "Acebin",
-        description: "A bin that supports over 40+ language.",
-        link: "https://acebin.ga/",
+        name: "Htmotor",
+        description:
+            "HTML Template engine for python. Supports XSS preventation and many more!",
+        link: "https://github.com/5elenay/htmotor",
     },
     {
         name: "Hyaline",
@@ -42,6 +38,16 @@ const projects = [
             "Fastest JSON database for python. Supports encryption and has tons of functions.",
         link: "https://github.com/5elenay/datagoose",
     },
+    {
+        name: "Scupt",
+        description: "An uptime service for websites. (Dead Project.)",
+        link: "https://scupt.ga/",
+    },
+    {
+        name: "Acebin",
+        description: "A bin that supports over 40+ language.",
+        link: "https://acebin.ga/",
+    }
 ];
 
 const using = [
