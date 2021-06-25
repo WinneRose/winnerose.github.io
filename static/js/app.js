@@ -33,15 +33,20 @@ const projects = [
         link: "https://github.com/5elenay/hyaline",
     },
     {
-        name: "Hawser",
-        description: "Hawser is a Lanyard API Wrapper for Python. Supports both REST and WebSocket methods.",
-        link: "https://github.com/5elenay/hawser",
-    },
-    {
         name: "Datagoose",
         description:
             "Fastest JSON database for python. Supports encryption and has tons of functions.",
         link: "https://github.com/5elenay/datagoose",
+    },
+    {
+        name: "Pewn",
+        description: "Another Python library for downloading files from URL.",
+        link: "https://github.com/5elenay/pewn",
+    },
+    {
+        name: "Hawser",
+        description: "Hawser is a Lanyard API Wrapper for Python. Supports both REST and WebSocket methods.",
+        link: "https://github.com/5elenay/hawser",
     },
     {
         name: "Scupt",
