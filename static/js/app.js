@@ -116,8 +116,8 @@ const using = [
 const lanyard = new WebSocket("wss://api.lanyard.rest/socket");
 
 // On Message
-lanyard.onmessage = function (packet) {
-    const parsedData = JSON.parse(packet.data);
+lanyard.onmessage = function ({data}) {
+    const parsedData = JSON.parse(data);
 
     if (parsedData.op == OPCODES.HELLO) {
         // Identify
@@ -125,7 +125,7 @@ lanyard.onmessage = function (packet) {
             JSON.stringify({
                 op: OPCODES.INIT,
                 d: {
-                    subscribe_to_ids: ["793467584820281346"],
+                    subscribe_to_id: "793467584820281346",
                 },
             })
         );
@@ -135,7 +135,6 @@ lanyard.onmessage = function (packet) {
             lanyard.send(
                 JSON.stringify({
                     op: OPCODES.HEARTBEAT,
-                    d: null,
                 })
             );
         }, parsedData.d.heartbeat_interval);
@@ -148,7 +147,7 @@ lanyard.onmessage = function (packet) {
         };
 
         if (parsedData.t == "INIT_STATE") {
-            const user = parsedData.d["793467584820281346"];
+            const user = parsedData.d;
 
             elements.card.style.opacity = "1";
             elements.username.innerText = user.discord_user.username;
