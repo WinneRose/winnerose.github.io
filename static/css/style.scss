@@ -102,8 +102,8 @@ button {
         align-items: center;
         justify-content: center;
 
-        padding-right: 10%;
-        padding-left: 10%;
+        padding-right: 15%;
+        padding-left: 15%;
 
         a {
             padding: 10px;
@@ -132,8 +132,8 @@ button {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         text-align: center;
-        padding-right: 10%;
-        padding-left: 10%;
+        padding-right: 15%;
+        padding-left: 15%;
 
         .project-card {
             -webkit-box-flex: 1;
@@ -191,14 +191,14 @@ button {
         flex-wrap: wrap;
         float: right;
 
-        @media only screen and (max-width: 338px) {
+        @media only screen and (max-width: 342px) {
             float: left;
         }
     }
 
     a {
         margin-top: -4px;
-        padding: 6px 10px 6px 0px;
+        padding: 6px;
 
         background-color: transparent;
         color: rgb(240, 240, 240);
@@ -217,7 +217,7 @@ button {
 }
 
 .container {
-    margin: 100px 10px 0 10px;
+    margin: 100px 25px 0 25px;
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: center;
@@ -265,7 +265,7 @@ button {
             transform: perspective(1000px);
         }
 
-        @media only screen and (max-width: 714px) {
+        @media only screen and (max-width: 744px) {
             width: 250px;
         }
     }
@@ -323,7 +323,7 @@ button {
         }
     }
 
-    @media only screen and (max-width: 714px) {
+    @media only screen and (max-width: 744px) {
         margin: 100px 0 0 0;
     }
 }

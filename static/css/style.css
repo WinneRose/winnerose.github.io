@@ -90,8 +90,8 @@ button {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-right: 15%;
+  padding-left: 15%;
 }
 .listing .flex-list a {
   padding: 10px;
@@ -117,8 +117,8 @@ button {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   text-align: center;
-  padding-right: 10%;
-  padding-left: 10%;
+  padding-right: 15%;
+  padding-left: 15%;
 }
 .listing .lists .project-card {
   -webkit-box-flex: 1;
@@ -169,14 +169,14 @@ button {
   flex-wrap: wrap;
   float: right;
 }
-@media only screen and (max-width: 338px) {
+@media only screen and (max-width: 342px) {
   .navbar .button-list {
     float: left;
   }
 }
 .navbar a {
   margin-top: -4px;
-  padding: 6px 10px 6px 0px;
+  padding: 6px;
   background-color: transparent;
   color: #f0f0f0;
   text-decoration: none;
@@ -190,7 +190,7 @@ button {
 }
 
 .container {
-  margin: 100px 10px 0 10px;
+  margin: 100px 25px 0 25px;
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: center;
@@ -230,7 +230,7 @@ button {
   margin-bottom: 15px;
   transform: perspective(1000px);
 }
-@media only screen and (max-width: 714px) {
+@media only screen and (max-width: 744px) {
   .container .card {
     width: 250px;
   }
@@ -277,7 +277,7 @@ button {
 .container .myself .social .white {
   filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(135deg) brightness(107%) contrast(101%);
 }
-@media only screen and (max-width: 714px) {
+@media only screen and (max-width: 744px) {
   .container {
     margin: 100px 0 0 0;
   }
