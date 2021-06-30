@@ -1,13 +1,13 @@
-"use strict";
+// app.js is es5 version of this code.
 
-var OPCODES = {
+const OPCODES = {
     INFO: 0,
     HELLO: 1,
     INIT: 2,
     HEARTBEAT: 3,
 };
 
-var elements = {
+const elements = {
     container: document.getElementsByClassName("container")[0],
     username: document.getElementById("discord-username"),
     discriminator: document.getElementById("discord-disc"),
@@ -15,7 +15,7 @@ var elements = {
     card: document.getElementById("profile-card"),
 };
 
-var projects = [
+const projects = [
     {
         name: "Htmotor",
         description:
@@ -69,7 +69,7 @@ var projects = [
     },
 ];
 
-var using = [
+const using = [
     {
         "background-color": "#3F7CAD",
         color: "#FFDF5A",
@@ -122,13 +122,11 @@ var using = [
     },
 ];
 
-var lanyard = new WebSocket("wss://api.lanyard.rest/socket");
+const lanyard = new WebSocket("wss://api.lanyard.rest/socket");
 
 // On Message
-lanyard.onmessage = function (_ref) {
-    var data = _ref.data;
-
-    var parsedData = JSON.parse(data);
+lanyard.onmessage = function ({ data }) {
+    const parsedData = JSON.parse(data);
 
     if (parsedData.op == OPCODES.HELLO) {
         // Identify
@@ -150,7 +148,7 @@ lanyard.onmessage = function (_ref) {
             );
         }, parsedData.d.heartbeat_interval);
     } else if (parsedData.op == OPCODES.INFO) {
-        var statusColors = {
+        const statusColors = {
             online: "#2afa62",
             offline: "#ddd",
             idle: "#eddf47",
@@ -158,67 +156,58 @@ lanyard.onmessage = function (_ref) {
         };
 
         if (parsedData.t == "INIT_STATE") {
-            var user = parsedData.d;
+            const user = parsedData.d;
 
             elements.card.style.opacity = "1";
             elements.username.innerText = user.discord_user.username;
-            elements.discriminator.innerText =
-                "#" + user.discord_user.discriminator;
+            elements.discriminator.innerText = `#${user.discord_user.discriminator}`;
 
-            elements.avatar.src =
-                "https://cdn.discordapp.com/avatars/793467584820281346/" +
-                user.discord_user.avatar +
-                ".png?size=128";
-            elements.avatar.style.border =
-                "3px solid " + statusColors[user.discord_status];
+            elements.avatar.src = `https://cdn.discordapp.com/avatars/793467584820281346/${user.discord_user.avatar}.png?size=128`;
+            elements.avatar.style.border = `3px solid ${
+                statusColors[user.discord_status]
+            }`;
 
             if (
                 !elements.status &&
-                user.activities.filter(function (i) {
-                    return i.type == 4;
-                }).length > 0
+                user.activities.filter((i) => i.type == 4).length > 0
             ) {
                 elements.status = document.createElement("p");
-                elements.status.innerText =
-                    '"' +
-                    user.activities.filter(function (i) {
-                        return i.type == 4;
-                    })[0].state +
-                    '"';
+                elements.status.innerText = `"${
+                    user.activities.filter((i) => i.type == 4)[0].state
+                }"`;
                 document.getElementById("profile-card").append(elements.status);
             }
         } else if (parsedData.t == "PRESENCE_UPDATE") {
-            var filteredActivity = parsedData.d.activities.filter(function (i) {
-                return i.type == 4;
-            });
+            const filteredActivity = parsedData.d.activities.filter(
+                (i) => i.type == 4
+            );
 
             if (elements.status && parsedData.d.activities.length == 0) {
                 elements.status.remove();
                 elements.status = undefined;
             } else if (!elements.status && filteredActivity.length > 0) {
                 elements.status = document.createElement("p");
-                elements.status.innerText =
-                    '"' + filteredActivity[0].state + '"';
+                elements.status.innerText = `"${filteredActivity[0].state}"`;
                 document.getElementById("profile-card").append(elements.status);
             } else if (elements.status && filteredActivity.length > 0) {
-                elements.status.innerText =
-                    '"' + filteredActivity[0].state + '"';
+                elements.status.innerText = `"${filteredActivity[0].state}"`;
             }
 
-            elements.avatar.style.border =
-                "3px solid " + statusColors[parsedData.d.discord_status];
+            elements.avatar.style.border = `3px solid ${
+                statusColors[parsedData.d.discord_status]
+            }`;
         }
     }
 };
 
 // Clipboard
 elements.username.onclick = function (e) {
-    copyText("" + e.target.innerText + elements.discriminator.innerText);
+    copyText(`${e.target.innerText}${elements.discriminator.innerText}`);
 };
 
 // Copy Text
 function copyText(text) {
-    var el = document.createElement("input");
+    const el = document.createElement("input");
     el.style.position = "absolute";
     el.style.left = "-1000px";
     el.value = text;
@@ -232,91 +221,36 @@ function copyText(text) {
 }
 
 // List Projects
-var _iteratorNormalCompletion = true;
-var _didIteratorError = false;
-var _iteratorError = undefined;
+for (const project of projects) {
+    const projectList = document.getElementById("project-list");
 
-try {
-    var _loop = function _loop() {
-        var project = _step.value;
+    const newCard = document.createElement("div");
+    newCard.className = "project-card";
+    newCard.style.cursor = "pointer";
 
-        var projectList = document.getElementById("project-list");
-
-        var newCard = document.createElement("div");
-        newCard.className = "project-card";
-        newCard.style.cursor = "pointer";
-
-        newCard.onclick = function () {
-            window.location.href = project.link;
-        };
-
-        var title = document.createElement("h1");
-        title.innerText = project.name;
-        newCard.append(title);
-
-        var description = document.createElement("p");
-        description.innerText = project.description;
-        newCard.append(description);
-
-        projectList.append(newCard);
+    newCard.onclick = function () {
+        window.location.href = project.link;
     };
 
-    for (
-        var _iterator = projects[Symbol.iterator](), _step;
-        !(_iteratorNormalCompletion = (_step = _iterator.next()).done);
-        _iteratorNormalCompletion = true
-    ) {
-        _loop();
-    }
+    const title = document.createElement("h1");
+    title.innerText = project.name;
+    newCard.append(title);
 
-// List Tools and Languages
-} catch (err) {
-    _didIteratorError = true;
-    _iteratorError = err;
-} finally {
-    try {
-        if (!_iteratorNormalCompletion && _iterator.return) {
-            _iterator.return();
-        }
-    } finally {
-        if (_didIteratorError) {
-            throw _iteratorError;
-        }
-    }
+    const description = document.createElement("p");
+    description.innerText = project.description;
+    newCard.append(description);
+
+    projectList.append(newCard);
 }
 
-var _iteratorNormalCompletion2 = true;
-var _didIteratorError2 = false;
-var _iteratorError2 = undefined;
+// List Tools and Languages
+for (const u of using) {
+    const usingList = document.getElementById("using-list");
 
-try {
-    for (
-        var _iterator2 = using[Symbol.iterator](), _step2;
-        !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done);
-        _iteratorNormalCompletion2 = true
-    ) {
-        var u = _step2.value;
+    const newCard = document.createElement("a");
+    newCard.style.backgroundColor = u["background-color"];
+    newCard.style.color = u.color;
+    newCard.innerText = u.name;
 
-        var usingList = document.getElementById("using-list");
-
-        var newCard = document.createElement("a");
-        newCard.style.backgroundColor = u["background-color"];
-        newCard.style.color = u.color;
-        newCard.innerText = u.name;
-
-        usingList.append(newCard);
-    }
-} catch (err) {
-    _didIteratorError2 = true;
-    _iteratorError2 = err;
-} finally {
-    try {
-        if (!_iteratorNormalCompletion2 && _iterator2.return) {
-            _iterator2.return();
-        }
-    } finally {
-        if (_didIteratorError2) {
-            throw _iteratorError2;
-        }
-    }
+    usingList.append(newCard);
 }

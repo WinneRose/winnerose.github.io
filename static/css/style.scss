@@ -34,12 +34,34 @@ button {
     padding-left: 50px;
     padding-right: 50px;
 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+
     a {
         color: #fff;
         text-decoration: none;
 
         &:hover {
             text-decoration: underline;
+        }
+    }
+
+    p {
+        margin: 0;
+        color: #fff;
+        text-decoration: none;
+        display: inline;
+
+        a {
+            color: $best_color;
+            text-decoration: none;
+    
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 }
@@ -107,15 +129,20 @@ button {
 
         a {
             padding: 10px;
+
+            padding-right: 15px;
+            padding-left: 15px;
+
             font-size: 24px;
-            font-weight: 500;
-            border-radius: 20px;
+            font-weight: 400;
+            border-radius: 300px;
             text-decoration: none;
             margin: 5px;
             transition: 250ms;
+            opacity: 0.8;
 
             &:hover {
-                transform: scale(1.1);
+                opacity: 1;
             }
         }
     }
