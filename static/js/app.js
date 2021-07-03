@@ -1,5 +1,3 @@
-// app.js is es5 version of this code.
-
 const OPCODES = {
     INFO: 0,
     HELLO: 1,
@@ -79,51 +77,55 @@ const using = [
         "background-color": "#3F7CAD",
         color: "#FFDF5A",
         name: "Python",
+        url: "https://www.python.org/",
     },
     {
         "background-color": "#FCDC00",
         color: "#000",
         name: "JavaScript",
+        url: "https://www.javascript.com/",
     },
     {
         "background-color": "#967AB4",
         color: "#fff",
         name: "Elixir",
+        url: "https://elixir-lang.org/",
     },
     {
         "background-color": "#7FD5EA",
         color: "#fff",
         name: "Golang",
+        url: "https://golang.org/",
     },
     {
         "background-color": "#F1662A",
         color: "#fff",
         name: "HTML",
+        url: "https://en.wikipedia.org/wiki/HTML",
     },
     {
         "background-color": "#33A9DC",
         color: "#fff",
         name: "CSS",
+        url: "https://en.wikipedia.org/wiki/CSS",
     },
     {
         "background-color": "#CF649A",
         color: "#fff",
         name: "SCSS",
-    },
-    {
-        "background-color": "#3EAF7C",
-        color: "#30435A",
-        name: "VueJS",
-    },
-    {
-        "background-color": "#FFF",
-        color: "#161E2E",
-        name: "Deno",
+        url: "https://sass-lang.com/",
     },
     {
         "background-color": "#FFF",
         color: "#13AA52",
         name: "MongoDB",
+        url: "https://www.mongodb.com/",
+    },
+    {
+        "background-color": "#336791",
+        color: "#FFF",
+        name: "PostgreSQL",
+        url: "https://www.postgresql.org/",
     },
 ];
 
@@ -256,6 +258,8 @@ for (const u of using) {
     newCard.style.backgroundColor = u["background-color"];
     newCard.style.color = u.color;
     newCard.innerText = u.name;
+    newCard.href = u.url;
+    newCard.target = "_blank";
 
     usingList.append(newCard);
 }
