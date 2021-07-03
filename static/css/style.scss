@@ -8,12 +8,7 @@ body {
     margin: 0;
 }
 
-h1,
-p,
-div,
-span,
-a,
-button {
+* {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;
@@ -24,6 +19,21 @@ button {
 
 button {
     cursor: pointer;
+}
+
+.wave {
+    width: 1200px;
+    height: 1250px;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    margin-left: -500px;
+    margin-top: -500px;
+    border-radius: 30%;
+    background: rgba(28, 28, 41, 0.75);
+    animation: wave 30s infinite linear;
+    z-index: -1;
+    animation-fill-mode: forwards;
 }
 
 .alt-footer {
@@ -38,7 +48,6 @@ button {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    
 
     a {
         color: #fff;
@@ -58,7 +67,7 @@ button {
         a {
             color: $best_color;
             text-decoration: none;
-    
+
             &:hover {
                 text-decoration: underline;
             }
@@ -69,20 +78,6 @@ button {
 .color {
     background-color: $best_color;
     height: 5px;
-}
-
-.wave {
-    width: 1200px;
-    height: 1250px;
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    margin-left: -500px;
-    margin-top: -500px;
-    border-radius: 30%;
-    background: rgba(28, 28, 41, 0.75);
-    animation: wave 15s infinite linear;
-    z-index: -1;
 }
 
 .div-container {
@@ -138,8 +133,8 @@ button {
             border-radius: 300px;
             text-decoration: none;
             margin: 5px;
-            transition: 250ms;
-            opacity: 0.8;
+            transition: 500ms;
+            opacity: 0.25;
 
             &:hover {
                 opacity: 1;
@@ -247,7 +242,7 @@ button {
     margin: 100px 25px 0 25px;
     display: flex;
     flex-wrap: wrap-reverse;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
     transition: 0.5s;

@@ -5,12 +5,7 @@ body {
   margin: 0;
 }
 
-h1,
-p,
-div,
-span,
-a,
-button {
+* {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -20,6 +15,23 @@ button {
 
 button {
   cursor: pointer;
+}
+
+.wave {
+  width: 1200px;
+  height: 1250px;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  margin-left: -500px;
+  margin-top: -500px;
+  border-radius: 30%;
+  background: rgba(28, 28, 41, 0.75);
+  -webkit-animation: wave 30s infinite linear;
+          animation: wave 30s infinite linear;
+  z-index: -1;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .alt-footer {
@@ -69,21 +81,6 @@ button {
 .color {
   background-color: #6063ff;
   height: 5px;
-}
-
-.wave {
-  width: 1200px;
-  height: 1250px;
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  margin-left: -500px;
-  margin-top: -500px;
-  border-radius: 30%;
-  background: rgba(28, 28, 41, 0.75);
-  -webkit-animation: wave 15s infinite linear;
-          animation: wave 15s infinite linear;
-  z-index: -1;
 }
 
 .div-container {
@@ -148,9 +145,9 @@ button {
   border-radius: 300px;
   text-decoration: none;
   margin: 5px;
-  -webkit-transition: 250ms;
-  transition: 250ms;
-  opacity: 0.8;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  opacity: 0.25;
 }
 
 .listing .flex-list a:hover {
@@ -266,9 +263,8 @@ button {
   display: flex;
   -ms-flex-wrap: wrap-reverse;
       flex-wrap: wrap-reverse;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
