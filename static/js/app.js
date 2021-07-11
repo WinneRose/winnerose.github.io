@@ -21,6 +21,12 @@ const projects = [
         link: "https://github.com/5elenay/postgrey",
     },
     {
+        name: "Unikorn",
+        description:
+            "Easy, fast and open-source local package manager for Python!",
+        link: "https://github.com/5elenay/unikorn",
+    },
+    {
         name: "Hyaline",
         description:
             "Hyaline is a discord api wrapper for python. Uses latest (v9) gateway version and supports cache system.",
@@ -71,7 +77,6 @@ const projects = [
         link: "https://acebin.ga/",
     },
 ];
-
 const using = [
     {
         "background-color": "#3F7CAD",
@@ -128,7 +133,6 @@ const using = [
         url: "https://www.postgresql.org/",
     },
 ];
-
 const lanyard = new WebSocket("wss://api.lanyard.rest/socket");
 
 // On Message
