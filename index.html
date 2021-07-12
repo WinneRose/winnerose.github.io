@@ -14,15 +14,15 @@
     <div class="center">
         <div class="flex-container">
             <div class="profile">
-                <div class="status">
-                    <img src="./static/images/default.png" alt="default" class="avatar-pic">
+                <div class="status" id="status">
+                    <img src="./static/images/default.png" alt="avatar" id="avatar" class="avatar-pic">
                 </div>
                 <div id="details">
                     <span id="username">abcdef</span>
                     <span id="tag">#0000</span>
                 </div>
             </div>
-            <div class="about">
+            <div class="about" id="about">
                 <h1>Welcome to my website! I&#39;m <span>5elenay</span>,</h1>
                 <p class="desc">
                     I&#39;m 15 years old self taught programmer from Turkey. 
@@ -34,5 +34,8 @@
             </div>
         </div>
     </div>
+
+    <!-- Load Lanyard -->
+    <script src="./static/js/socket.js"></script>
 </body>
 </html>
