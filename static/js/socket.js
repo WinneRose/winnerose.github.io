@@ -16,7 +16,7 @@ const elements = {
 const lanyard = new WebSocket("wss://api.lanyard.rest/socket");
 
 // On Message
-lanyard.onmessage = function ({ data }) {
+lanyard.onmessage = ({ data }) => {
   const parsedData = JSON.parse(data);
 
   if (parsedData.op == OPCODES.HELLO) {
