@@ -7,10 +7,16 @@
 
     <!-- Load Style -->
     <link rel="stylesheet" href="./static/scss/style.css" />
-    <title>Document</title>
+    <title>5elenay - 127.0.0.1</title>
   </head>
   <body>
     <div class="line"></div>
+    <div id="navbar">
+      <h1>5elenay</h1>
+      <span class="button-list">
+        <a href="#about">About Me</a>
+      </span>
+    </div>
     <div class="center">
       <div class="flex-container">
         <div class="about" id="about">
@@ -48,7 +54,7 @@
             />
           </span>
         </div>
-        <div class="profile">
+        <div class="profile" id="profile">
           <div class="status" id="status">
             <img
               src="./static/images/default.png"
@@ -63,10 +69,17 @@
           </div>
         </div>
       </div>
+      <hr />
+      <h1 class="title">I Use</h1>
+      <div id="technologies">
+      </div>
+      <hr />
+      <h1 class="title">Github Repositories</h1>
     </div>
 
     <!-- Load Lanyard -->
     <script src="./static/js/socket.js"></script>
+    <script src="./static/js/technologies.js"></script>
     <script src="./static/js/github.js"></script>
   </body>
 </html>

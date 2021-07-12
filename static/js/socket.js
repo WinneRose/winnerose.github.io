@@ -10,7 +10,7 @@ const elements = {
   discriminator: document.getElementById("tag"),
   avatar: document.getElementById("avatar"),
   status: document.getElementById("status"),
-  card: document.getElementById("about"),
+  card: document.getElementById("profile"),
 };
 
 const lanyard = new WebSocket("wss://api.lanyard.rest/socket");
