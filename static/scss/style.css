@@ -19,6 +19,7 @@ body {
 }
 
 .flex-container {
+  margin-top: 75px;
   margin: 100px 25px 0 25px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,7 +34,8 @@ body {
 }
 
 .flex-container .profile {
-  margin-top: 75px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .flex-container .profile .status {
@@ -106,7 +108,8 @@ body {
 }
 
 .flex-container .about {
-  width: 70%;
+  width: 80%;
+  text-align: left;
 }
 
 .flex-container .about h1 {
@@ -145,6 +148,23 @@ body {
 
 .flex-container .about p a:hover {
   background-size: 100% 2px;
+}
+
+.flex-container .about .social img {
+  cursor: pointer;
+  margin: 0;
+  display: inline;
+  width: 24px;
+  margin-right: 15px;
+  -webkit-transition: 250ms;
+  transition: 250ms;
+  -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(135deg) brightness(107%) contrast(101%);
+          filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(135deg) brightness(107%) contrast(101%);
+}
+
+.flex-container .about .social img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 @-webkit-keyframes morphing {

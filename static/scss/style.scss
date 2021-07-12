@@ -37,6 +37,7 @@ body {
 }
 
 .flex-container {
+  margin-top: 75px;
   margin: 100px 25px 0 25px;
   display: flex;
   flex-wrap: wrap-reverse;
@@ -44,7 +45,8 @@ body {
   align-items: center;
 
   .profile {
-    margin-top: 75px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 
     .status {
       display: flex;
@@ -100,7 +102,8 @@ body {
   }
 
   .about {
-    width: 70%;
+    width: 80%;
+    text-align: left;
 
     h1 {
       color: #fff;
@@ -133,6 +136,23 @@ body {
       }
       a:hover {
         background-size: 100% 2px;
+      }
+    }
+
+    .social {
+      img {
+        cursor: pointer;
+        margin: 0;
+        display: inline;
+        width: 24px;
+        margin-right: 15px;
+        transition: 250ms;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(135deg)
+          brightness(107%) contrast(101%);
       }
     }
   }
