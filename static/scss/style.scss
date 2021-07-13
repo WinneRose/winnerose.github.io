@@ -76,8 +76,13 @@ hr {
 }
 
 #navbar {
+  display: flex;
+  flex-wrap: wrap;
   background-color: transparent;
   margin-top: 10px;
+
+  align-items: center;
+  justify-content: space-between;
 
   padding: 10px;
   padding-left: 50px;
@@ -103,9 +108,7 @@ hr {
     }
 
     a {
-      margin-top: -2px;
-
-      padding: 6px;
+      margin: 0 20px 0 0;
 
       font-size: 20px;
       font-weight: 400;
@@ -135,12 +138,15 @@ hr {
 }
 
 .flex-container {
-  margin-top: 75px;
-  margin: 100px 25px 0 25px;
+  margin: 75px 25px 0 25px;
   display: flex;
   flex-wrap: wrap-reverse;
   justify-content: space-around;
   align-items: center;
+
+  @media only screen and (max-width: 603px) {
+    margin-top: 10px;
+  }
 
   .profile {
     margin-top: 30px;
@@ -315,8 +321,8 @@ hr {
   flex: 1 1 25%;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-right: 15%;
-  padding-left: 15%;
+  margin-right: 5%;
+  margin-left: 5%;
   margin-bottom: 20px;
 
   .repo {
@@ -344,6 +350,7 @@ hr {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      align-items: center;
       margin: 0 auto;
 
       a {

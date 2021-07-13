@@ -47,8 +47,19 @@ hr {
 }
 
 #navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background-color: transparent;
   margin-top: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 10px;
   padding-left: 50px;
   padding-right: 50px;
@@ -80,8 +91,7 @@ hr {
 }
 
 #navbar .button-list a {
-  margin-top: -2px;
-  padding: 6px;
+  margin: 0 20px 0 0;
   font-size: 20px;
   font-weight: 400;
   -webkit-transition: 250ms;
@@ -108,8 +118,7 @@ hr {
 }
 
 .flex-container {
-  margin-top: 75px;
-  margin: 100px 25px 0 25px;
+  margin: 75px 25px 0 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,6 +129,12 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 603px) {
+  .flex-container {
+    margin-top: 10px;
+  }
 }
 
 .flex-container .profile {
@@ -325,8 +340,8 @@ hr {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-right: 15%;
-  padding-left: 15%;
+  margin-right: 5%;
+  margin-left: 5%;
   margin-bottom: 20px;
 }
 
@@ -364,6 +379,9 @@ hr {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 auto;
 }
 
