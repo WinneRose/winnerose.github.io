@@ -485,4 +485,23 @@ hr {
     transform: translateY(-10px);
   }
 }
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #353755 #222331;
+}
+
+*::-webkit-scrollbar {
+  width: 14px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #222331;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #353755;
+  border-radius: 10px;
+  border: 3px solid #222331;
+}
 /*# sourceMappingURL=style.css.map */
