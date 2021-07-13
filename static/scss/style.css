@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #222331;
   margin: 0;
@@ -43,8 +47,19 @@ hr {
 }
 
 #navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background-color: transparent;
   margin-top: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 10px;
   padding-left: 50px;
   padding-right: 50px;
@@ -76,8 +91,7 @@ hr {
 }
 
 #navbar .button-list a {
-  margin-top: -2px;
-  padding: 6px;
+  margin: 0 20px 0 0;
   font-size: 20px;
   font-weight: 400;
   -webkit-transition: 250ms;
@@ -104,8 +118,7 @@ hr {
 }
 
 .flex-container {
-  margin-top: 75px;
-  margin: 100px 25px 0 25px;
+  margin: 75px 25px 0 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,6 +129,12 @@ hr {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 603px) {
+  .flex-container {
+    margin-top: 10px;
+  }
 }
 
 .flex-container .profile {
@@ -225,12 +244,13 @@ hr {
   background-size: 100% 2px;
 }
 
+.flex-container .about .social a {
+  margin: 0 15px 0 0;
+  text-decoration: none;
+}
+
 .flex-container .about .social img {
-  cursor: pointer;
-  margin: 0;
-  display: inline;
   width: 24px;
-  margin-right: 15px;
   -webkit-transition: 250ms;
   transition: 250ms;
   -webkit-filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(135deg) brightness(107%) contrast(101%);
@@ -312,23 +332,23 @@ hr {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: 1;
-  -ms-flex: 1 1 25%;
-  flex: 1 1 25%;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding-right: 15%;
-  padding-left: 15%;
+      flex-wrap: wrap;
+  margin-right: 5%;
+  margin-left: 5%;
   margin-bottom: 20px;
 }
 
 #repos .repo {
   -webkit-box-flex: 1;
-  -ms-flex: 1 1 25%;
-      flex: 1 1 25%;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
   width: auto;
   margin: 10px;
   background-color: #292b42;
@@ -344,8 +364,8 @@ hr {
 }
 
 #repos .repo:hover {
-  margin-top: 5px;
-  margin-bottom: 15px;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
   -webkit-box-shadow: 0px 13px 24px -15px rgba(0, 0, 0, 0.88);
   box-shadow: 0px 13px 24px -15px rgba(0, 0, 0, 0.88);
 }
@@ -359,6 +379,9 @@ hr {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 auto;
 }
 

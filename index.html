@@ -2,29 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Metadata -->
-    <meta content="@5elenay" property="og:title">
-    <meta content="Welcome to my website, I'm 5elenay." property="og:description">
-    <meta content="5elenay" property="og:site_name">
-    <meta content="website" property="og:type">
-    <meta content="en_US" property="og:locale">
-    <meta content='./static/images/favicon.png' property='og:image'>
-    
-    <meta name="title" content="5elenay">
-    <meta name="description" content="Welcome to my website, I'm 5elenay.">
-    <meta name="keywords" content="website,5elenay,selenay,github,web,personal,hyaline,htmotor,lanyard">
-    <meta name="robots" content="index, follow">
-    <meta name="language" content="English">
-    <meta name="author" content="https://github.com/5elenay">
+    <meta content="@5elenay" property="og:title" />
+    <meta
+      content="Welcome to my website, I'm 5elenay."
+      property="og:description"
+    />
+    <meta content="5elenay" property="og:site_name" />
+    <meta content="website" property="og:type" />
+    <meta content="en_US" property="og:locale" />
+    <meta content="./static/images/favicon.png" property="og:image" />
+
+    <meta name="title" content="5elenay" />
+    <meta name="description" content="Welcome to my website, I'm 5elenay." />
+    <meta
+      name="keywords"
+      content="website,5elenay,selenay,github,web,personal,hyaline,htmotor,lanyard"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="author" content="https://github.com/5elenay" />
 
     <!-- Load Style -->
     <link rel="stylesheet" href="./static/scss/style.css" />
 
-    
-    <link rel="shortcut icon" type="image/png" href="./static/images/favicon.png"/>
-    <title>5elenay - 127.0.0.1</title>
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="./static/images/favicon.png"
+    />
+    <title>5elenay</title>
   </head>
   <body>
     <div class="line"></div>
@@ -55,22 +63,18 @@
             sometimes.
           </p>
           <span class="social">
-            <img
-              src="./static/images/dev.svg"
-              alt="dev"
-              style="border-radius: 5px"
-              onclick="window.open('https://dev.to/5elenay', '_blank')"
-            />
-            <img
-              src="./static/images/github.svg"
-              alt="github"
-              onclick="window.open('https://github.com/5elenay', '_blank')"
-            />
-            <img
-              src="./static/images/discord.svg"
-              alt="discord"
-              onclick="window.open('https://discord.com/users/793467584820281346', '_blank')"
-            />
+            <a href="https://dev.to/5elenay" target="_blank">
+              <img src="./static/images/dev.svg" alt="dev" />
+            </a>
+            <a href="https://github.com/5elenay" target="_blank">
+              <img src="./static/images/github.svg" alt="github" />
+            </a>
+            <a
+              href="https://discord.com/users/793467584820281346"
+              target="_blank"
+            >
+              <img src="./static/images/discord.svg" alt="discord" />
+            </a>
           </span>
         </div>
         <div class="profile" id="profile">
@@ -101,10 +105,8 @@
       >
     </div>
     <div class="line"></div>
-
-    <!-- Load Scripts -->
-    <script src="./static/js/socket.js"></script>
-    <script src="./static/js/technologies.js"></script>
-    <script src="./static/js/github.js"></script>
   </body>
+  <script src="./static/js/socket.js"></script>
+  <script src="./static/js/technologies.js"></script>
+  <script src="./static/js/github.js"></script>
 </html>

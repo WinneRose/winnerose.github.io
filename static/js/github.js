@@ -11,7 +11,7 @@ async function getRepo(user) {
 function filterRepos(repos) {
   const deleteForks = repos.filter((i) => !i.fork);
   const sortRepo = deleteForks.sort(
-    (a, b) => new Date(a.updated_at) < new Date(b.updated_at)
+    (a, b) => new Date(b.updated_at) - new Date(a.updated_at)
   );
 
   return sortRepo.slice(0, 12);
