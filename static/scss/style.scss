@@ -422,3 +422,22 @@ hr {
     transform: translateY(-10px);
   }
 }
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: $lessDarkBlue $darkBlue;
+}
+
+*::-webkit-scrollbar {
+  width: 14px;
+}
+
+*::-webkit-scrollbar-track {
+  background: $darkBlue;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $lessDarkBlue;
+  border-radius: 10px;
+  border: 3px solid $darkBlue;
+}
