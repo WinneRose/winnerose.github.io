@@ -25,7 +25,7 @@ lanyard.onmessage = ({ data }) => {
             JSON.stringify({
                 op: OPCODES.INIT,
                 d: {
-                    subscribe_to_id: "793467584820281346",
+                    subscribe_to_id: "866849747603816468",
                 },
             })
         );
@@ -53,7 +53,7 @@ lanyard.onmessage = ({ data }) => {
             elements.username.innerText = user.discord_user.username;
             elements.discriminator.innerText = `#${user.discord_user.discriminator}`;
 
-            elements.avatar.src = `https://cdn.discordapp.com/avatars/793467584820281346/${user.discord_user.avatar}.png?size=128`;
+            elements.avatar.src = `https://cdn.discordapp.com/avatars/866849747603816468/${user.discord_user.avatar}.png?size=128`;
             elements.status.style.background =
                 statusColors[user.discord_status];
         } else if (parsedData.t == "PRESENCE_UPDATE") {
