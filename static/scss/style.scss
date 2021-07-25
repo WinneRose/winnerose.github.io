@@ -290,6 +290,17 @@ hr {
             @include moreShadow;
         }
 
+        &:hover > a {
+            background-size: 100% 100%;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        &:hover > img {
+            width: 0px;
+            padding: 0px;
+        }
+
         img {
             background: $gradient;
             margin: 0;
@@ -298,20 +309,24 @@ hr {
 
             border-top-left-radius: 10px;
             border-bottom-left-radius: 10px;
+            transition: 250ms ease;
         }
 
         a {
             padding: 10px;
             display: inline;
             color: #fff;
-            font-size: 24px;
+            font-size: 26px;
             font-weight: 400;
             text-decoration: none;
-            font-family: consolas, serif;
 
-            &:hover {
-                text-decoration: underline;
-            }
+            background-image: $gradient;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 0% 0%;
+            transition: 500ms ease;
+
+            border-radius: 10px;
         }
     }
 }
@@ -379,8 +394,8 @@ hr {
             p {
                 display: inline;
                 font-size: 20px;
-                font-weight: 300;
-                font-family: consolas, serif;
+                font-weight: 400;
+                font-family: "Poppins", serif;
                 color: #fff;
             }
         }

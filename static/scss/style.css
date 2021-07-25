@@ -303,6 +303,17 @@ hr {
   box-shadow: 0px 13px 24px -15px rgba(0, 0, 0, 0.88);
 }
 
+#technologies .technology:hover > a {
+  background-size: 100% 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+#technologies .technology:hover > img {
+  width: 0px;
+  padding: 0px;
+}
+
 #technologies .technology img {
   background: -webkit-gradient(linear, left top, right top, from(#d739c4), to(#e34e8b));
   background: linear-gradient(90deg, #d739c4 0%, #e34e8b 100%);
@@ -311,20 +322,25 @@ hr {
   width: 32px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  -webkit-transition: 250ms ease;
+  transition: 250ms ease;
 }
 
 #technologies .technology a {
   padding: 10px;
   display: inline;
   color: #fff;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 400;
   text-decoration: none;
-  font-family: consolas, serif;
-}
-
-#technologies .technology a:hover {
-  text-decoration: underline;
+  background-image: -webkit-gradient(linear, left top, right top, from(#d739c4), to(#e34e8b));
+  background-image: linear-gradient(90deg, #d739c4 0%, #e34e8b 100%);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 0% 0%;
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+  border-radius: 10px;
 }
 
 #repos {
@@ -412,8 +428,8 @@ hr {
 #repos .repo .repo-title p {
   display: inline;
   font-size: 20px;
-  font-weight: 300;
-  font-family: consolas, serif;
+  font-weight: 400;
+  font-family: "Poppins", serif;
   color: #fff;
 }
 
