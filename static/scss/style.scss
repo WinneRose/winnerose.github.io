@@ -292,11 +292,12 @@ hr {
 
         &:hover > a {
             background-size: 100% 100%;
-            padding-left: 30px;
-            padding-right: 30px;
+            padding-left: 36px;
+            padding-right: 36px;
         }
 
         &:hover > img {
+            opacity: 0;
             width: 0px;
             padding: 0px;
         }
@@ -309,7 +310,7 @@ hr {
 
             border-top-left-radius: 10px;
             border-bottom-left-radius: 10px;
-            transition: 250ms ease;
+            transition: 350ms ease;
         }
 
         a {
@@ -324,7 +325,7 @@ hr {
             background-position: center center;
             background-repeat: no-repeat;
             background-size: 0% 0%;
-            transition: 500ms ease;
+            transition: 350ms ease;
 
             border-radius: 10px;
         }
