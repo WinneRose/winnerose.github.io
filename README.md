@@ -7,7 +7,7 @@ My personal website that does not uses a framework or library. My old website wa
 
 ## Customizing
 
-If you want to fork my website and add your discord profile, You can do this easily. Fork the website and open `./static/js/socket.js` file. Replace all `793467584820281346` with your Discord ID. Don't forget to join Lanyard server before doing this.
+If you want to fork my website and add your discord profile, You can do this easily. Fork the website and open `./static/js/socket.js` file. Replace all `866849747603816468` with your Discord ID. Don't forget to join Lanyard server before doing this.
 
 ## Other
 
