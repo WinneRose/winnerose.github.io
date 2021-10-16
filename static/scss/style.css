@@ -17,9 +17,9 @@ hr {
 
 .line {
   min-height: 6px;
-  background: #d739c4;
-  background: -webkit-gradient(linear, left top, right top, from(#d739c4), to(#e34e8b));
-  background: linear-gradient(90deg, #d739c4 0%, #e34e8b 100%);
+  background: #6854E3;
+  background: -webkit-gradient(linear, left top, right top, from(#6854E3), to(#5970f1));
+  background: linear-gradient(90deg, #6854E3 0%, #725dfd 100%);
 }
 
 .alt-footer {
@@ -32,8 +32,8 @@ hr {
 .alt-footer a {
   color: #fff;
   text-decoration: none;
-  background-image: -webkit-gradient(linear, left top, right top, from(#d739c4), to(#e34e8b));
-  background-image: linear-gradient(90deg, #d739c4 0%, #e34e8b 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#6854E3), to(#5970f1));
+  background-image: linear-gradient(90deg, #6854E3 0%, #5970f1 100%);
   background-position: bottom left;
   background-repeat: no-repeat;
   background-size: 0% 2px;
@@ -98,8 +98,8 @@ hr {
   transition: 250ms;
   color: #fff;
   text-decoration: none;
-  background-image: -webkit-gradient(linear, left top, right top, from(#d739c4), to(#e34e8b));
-  background-image: linear-gradient(90deg, #d739c4 0%, #e34e8b 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#6854E3), to(#5970f1));
+  background-image: linear-gradient(90deg, #6854E3 0%, #5970f1 100%);
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: 0% 3px;
@@ -118,7 +118,7 @@ hr {
 }
 
 .flex-container {
-  margin: 75px 25px 0 25px;
+  margin: 75px 10px 0 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,7 +139,7 @@ hr {
 
 .flex-container .profile {
   margin-top: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   opacity: 0;
   -webkit-transition: 500ms;
   transition: 500ms;
@@ -192,8 +192,8 @@ hr {
 }
 
 .flex-container .profile #details #tag {
-  background: -webkit-gradient(linear, left top, right top, from(#d739c4), to(#e34e8b));
-  background: linear-gradient(90deg, #d739c4 0%, #e34e8b 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#6854E3), to(#5970f1));
+  background: linear-gradient(90deg, #6854E3 0%, #5970f1 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -214,8 +214,8 @@ hr {
 }
 
 .flex-container .about h1 span {
-  background: -webkit-gradient(linear, left top, right top, from(#d739c4), to(#e34e8b));
-  background: linear-gradient(90deg, #d739c4 0%, #e34e8b 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#6854E3), to(#5970f1));
+  background: linear-gradient(90deg, #6854E3 0%, #5970f1 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -231,8 +231,8 @@ hr {
 .flex-container .about p a {
   color: #cbd6ec;
   text-decoration: none;
-  background-image: -webkit-gradient(linear, left top, right top, from(#d739c4), to(#e34e8b));
-  background-image: linear-gradient(90deg, #d739c4 0%, #e34e8b 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#6854E3), to(#5970f1));
+  background-image: linear-gradient(90deg, #6854E3 0%, #5970f1 100%);
   background-position: bottom left;
   background-repeat: no-repeat;
   background-size: 30% 2px;
@@ -316,8 +316,8 @@ hr {
 }
 
 #technologies .technology img {
-  background: -webkit-gradient(linear, left top, right top, from(#d739c4), to(#e34e8b));
-  background: linear-gradient(90deg, #d739c4 0%, #e34e8b 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#6854E3), to(#5970f1));
+  background: linear-gradient(90deg, #6854E3 0%, #5970f1 100%);
   margin: 0;
   padding: 10px;
   width: 32px;
@@ -334,8 +334,8 @@ hr {
   font-size: 26px;
   font-weight: 400;
   text-decoration: none;
-  background-image: -webkit-gradient(linear, left top, right top, from(#d739c4), to(#e34e8b));
-  background-image: linear-gradient(90deg, #d739c4 0%, #e34e8b 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#6854E3), to(#5970f1));
+  background-image: linear-gradient(90deg, #6854E3 0%, #5970f1 100%);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 0% 0%;
@@ -406,8 +406,8 @@ hr {
   color: #fff;
   font-size: 24px;
   text-decoration: none;
-  background-image: -webkit-gradient(linear, left top, right top, from(#d739c4), to(#e34e8b));
-  background-image: linear-gradient(90deg, #d739c4 0%, #e34e8b 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#6854E3), to(#5970f1));
+  background-image: linear-gradient(90deg, #6854E3 0%, #5970f1 100%);
   background-position: bottom left;
   background-repeat: no-repeat;
   background-size: 50% 3px;
@@ -550,8 +550,8 @@ hr {
 }
 
 .container input:checked ~ .checkmark {
-  background: -webkit-gradient(linear, left top, right top, from(#d739c4), to(#e34e8b));
-  background: linear-gradient(90deg, #d739c4 0%, #e34e8b 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#6854E3), to(#5970f1));
+  background: linear-gradient(90deg, #6854E3 0%, #5970f1 100%);
 }
 
 .container input:checked ~ .checkmark:after {
@@ -603,8 +603,16 @@ hr {
 }
 
 #perm-desc span {
-  background: -webkit-gradient(linear, left top, right top, from(#d739c4), to(#e34e8b));
-  background: linear-gradient(90deg, #d739c4 0%, #e34e8b 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#6854E3), to(#5970f1));
+  background: linear-gradient(90deg, #6854E3 0%, #5970f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+.desc span {
+  background: -webkit-gradient(linear, left top, right top, from(#6854E3), to(#5970f1));
+  background: linear-gradient(90deg, #6854E3 0%, #5970f1 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -622,5 +630,13 @@ hr {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+.spotify-pic{
+  border-radius: 10px;
+  visibility: hidden;
+}
+.spotifyarea{
+  display: -ms-flexbox;
+  margin-top: 30px;
 }
 /*# sourceMappingURL=style.css.map */

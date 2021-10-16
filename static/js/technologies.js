@@ -3,8 +3,8 @@ const technologiesElement = document.getElementById("technologies");
 const technologies = [
     {
         url: "https://elixir-lang.org/",
-        name: "Elixir",
-        icon: "elixir.svg",
+        name: "NuxtJS",
+        icon: "nuxtjs.svg",
     },
     {
         url: "https://golang.org/",
@@ -17,34 +17,14 @@ const technologies = [
         icon: "javascript.svg",
     },
     {
-        url: "https://python.org/",
-        name: "Python",
-        icon: "python.svg",
-    },
-    {
         url: "https://en.wikipedia.org/wiki/HTML",
         name: "HTML",
         icon: "html.svg",
     },
     {
-        url: "https://sass-lang.com/",
-        name: "Sass",
-        icon: "sass.svg",
-    },
-    {
         url: "https://www.mongodb.com/",
         name: "MongoDB",
         icon: "mongodb.svg",
-    },
-    {
-        url: "https://www.postgresql.org/",
-        name: "PostgreSQL",
-        icon: "postgres.svg",
-    },
-    {
-        url: "https://deno.land/",
-        name: "Deno",
-        icon: "deno.svg",
     },
     {
         url: "https://git-scm.com/",
@@ -55,6 +35,26 @@ const technologies = [
         url: "https://code.visualstudio.com/",
         name: "Visual Studio Code",
         icon: "vscode.svg",
+    },
+    {
+        url: "https://www.figma.com/",
+        name: "Figma",
+        icon: "figma.svg",
+    },
+    {
+        url: "https://nodejs.org/en/",
+        name: "NodeJS",
+        icon: "nodejs.svg",
+    },
+    {
+        url: "https://tailwindcss.com/",
+        name: "TailwindCSS",
+        icon: "tailwindcss.svg",
+    },
+    {
+        url: "https://www.npmjs.com/",
+        name: "NPM",
+        icon: "npmjs.svg",
     },
 ];
 
