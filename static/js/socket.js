@@ -50,7 +50,7 @@ lanyard.onmessage = ({ data }) => {
 
         if (parsedData.t == "INIT_STATE") {
             const user = parsedData.d;
-            elements.avatar.src = `https://cdn.discordapp.com/avatars/701896585604497490/${user.discord_user.avatar}.png?size=128`;
+            elements.avatar.src = `https://cdn.discordapp.com/avatars/701896585604497490/${user.discord_user.avatar}?size=128`;
             var a = 0
             console.log(user)
             elements.card.style.opacity = "1";
